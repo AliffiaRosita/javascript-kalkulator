@@ -60,6 +60,9 @@ clearBtn.addEventListener('click',()=>{
 });
 
 const inputDecimal=(dot)=>{
+    if (currentNumber.includes('.')) {
+        return
+    }
     currentNumber +=dot;
 }
 const percentageCalculate = ()=>{
